@@ -1,0 +1,33 @@
+{
+    "name": "meetabug/uploader",
+    "authors": [
+        {
+            "name": "meetabug",
+            "email": "1272526724@qq.com"
+        }
+    ],
+    "description": "The Laravel uploader.",
+    "keywords": ["laravel", "uploader"],
+    "license": "MIT",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Meetabug\\Uploader\\ServiceProvider"
+            ],
+            "aliases": {
+                "Uploader": "Meetabug\\Uploader\\Facade"
+            }
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^8.4",
+        "mockery/mockery": "^1.2",
+        "aliyuncs/oss-sdk-php": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Meetabug\\Uploader\\": "src/"
+        }
+    }
+
+}
